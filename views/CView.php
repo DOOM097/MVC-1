@@ -1,12 +1,12 @@
 <?php
 
-require_once ('./controllers/CController.php');
+require_once ('controllers/CController.php');
 
 class CView {
-    public function ViewMainPage() {
+    public function ViewMainPage () {
         $controller = new CController();
         $arrayResult = $controller->SetMainPage();
-        include 'views/view_MainPage.php';
+        include 'views/view_mainPage.php';
         Return $arrayResult;
     }
 
@@ -14,7 +14,8 @@ class CView {
         return 'views/header.php';
     }
 
-    public function GetFooter() {
+    public function  GetFooter () {
         return 'views/footer.php';
     }
 }
+

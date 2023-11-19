@@ -1,7 +1,8 @@
 <?php
 
-require_once ('./models/CModel.php');
-require_once ('./views/CView.php');
+require_once ('models/CModel.php');
+require_once ('views/CView.php');
+
 
 class CController {
     public $model;
@@ -10,6 +11,7 @@ class CController {
     public function SetMainPage () {
         $model = new CModel();
         $resultModel = $model->GetData();
+
 
         return $resultModel;
     }
